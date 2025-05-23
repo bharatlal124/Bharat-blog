@@ -6,7 +6,7 @@ const App = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/blogs/all')
+    fetch('https://bharat-blog.onrender.com/all')
       .then(res => res.json())
       .then(data => setBlogs(data));
   }, []);
