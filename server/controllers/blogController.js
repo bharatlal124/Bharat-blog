@@ -39,6 +39,8 @@ exports.createBlog = async (req, res) => {
     //   image: result.secure_url,
       imageData,
       imageContentType,
+      authorName: 'Bharat',
+      authorImage: 'https://res.cloudinary.com/dok1a0vcc/image/upload/v1750056915/blog-images/qfapmrmhdxrekp6sg6l2.png'
     });
 
     await blog.save();
